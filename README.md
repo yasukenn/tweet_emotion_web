@@ -9,33 +9,35 @@
 ```
 tweet_emotion_web
 │
-├── README.md # このドキュメント
+├── README.md
 │
-├── code # 主要なコードのディレクトリ
-│ ├── app.py # ウェブアプリのエントリーポイント
-│ ├── kanjyo.py # 感情分析に関する処理
-│ ├── tweet_get2.py # ツイートの取得関連
-│ └── wordcloud_create.py # ワードクラウド生成
+├── code
+│ ├── app.py
+│ ├── kanjyo.py
+│ ├── tweet_get2.py
+│ └── wordcloud_create.py
 │
-├── static # 静的ファイルのディレクトリ
-│ ├── csv # CSV結果の保存先
-│ │ ├── result1.csv # 分析結果CSV
-│ │ └── tweet_text1.csv # 取得ツイートのテキストCSV
+├── static
+│ ├── csv
+│ │ ├── result1.csv
+│ │ └── tweet_text1.csv
 │ │
-│ └── image # 画像データのディレクトリ
-│ ├── figureXXX.jpg # 画像例
-│ ├── graphXXX.jpg # グラフ画像例
-│ ├── plotfigXXX.jpg # プロット画像例
-│ └── wordcloud_sample753.jpg # ワードクラウド画像例
+│ └── image
+│ ├── figureXXX.jpg
+│ ├── graphXXX.jpg
+│ ├── plotfigXXX.jpg
+│ └── wordcloud_sampleXXX.jpg
 │
-└── templates # HTMLテンプレート
-  ├── index.html # トップページテンプレート
-  ├── result.html # 結果表示ページテンプレート
-  └── search.html # ツイート検索ページテンプレート
+└── templates
+  ├── index.html
+  ├── result.html
+  └── search.html
 ```
 
 
-## 使用方法（TwitterAPIの開発状況により、使用不可能な可能性があります。）
+## 使用方法
+
+（TwitterAPIの開発状況により、使用不可能な可能性があります。）
 
 1. 必要なライブラリやパッケージをインストールしてください。
 2. TwitterAPIキーとGooglecloudのCloud Natural Language APIキーを取得し、設定してください。
