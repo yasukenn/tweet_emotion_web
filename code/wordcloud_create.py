@@ -79,7 +79,7 @@ def wordcloud(words,fpath,random_num):
     #wordcloudのために、文字列を結合
     wordC_text = ' '.join(words)
     wordcloud = WordCloud(background_color="white",font_path=fpath, width=900, height=500).generate(wordC_text)
-    URL1 = "/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/image/wordcloud_sample.jpg"
+    URL1 = "../static/image/wordcloud_sample.jpg"
     index1 = URL1.find(".jpg")
     final_URL1 = URL1[:index1] + random_num + URL1[index1:]
     wordcloud.to_file(final_URL1)
@@ -97,7 +97,7 @@ def pltbarh(word_list,count_list,random_num):
     plt.barh(word_list, count_list)
     plt.xlabel("word")
     plt.ylabel("count")
-    URL2 = "/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/image/figure.jpg"
+    URL2 = "../static/image/figure.jpg"
     index2 = URL2.find(".jpg")
     final_URL2 = URL2[:index2] + random_num + URL2[index2:]
     plt.savefig(final_URL2)
@@ -106,9 +106,9 @@ def pltbarh(word_list,count_list,random_num):
 def main():
 
     # テキストファイルの読み込み
-    infile='/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/csv/tweet_text1.csv'
+    infile='../static/csv/tweet_text1.csv'
     fpath='/Library/Fonts/Arial Unicode.ttf'
-    csv_file_name='/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/csv/result1.csv'
+    csv_file_name='../static/csv/result1.csv'
 
     random_num  =  str(random.randrange(1000))
     words = []

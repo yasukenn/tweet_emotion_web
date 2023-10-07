@@ -25,7 +25,7 @@ def kanjyo():
 
 
     # tweets.csvの読み込み
-    df_tweet = pd.read_csv('/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/csv/tweet_text1.csv', encoding='utf-8')
+    df_tweet = pd.read_csv('../static/csv/tweet_text1.csv', encoding='utf-8')
 
 
     # Google Cloud Natural Language API　に分析を任せる。
@@ -47,7 +47,7 @@ def kanjyo():
 
     # Cookieの使用により、URLにランダム番号を挿入し、保存
     random_num  =  str(random.randrange(1000))
-    URL1 = "/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/image/plotfig.jpg"
+    URL1 = "../static/image/plotfig.jpg"
     index1 = URL1.find(".jpg")
     final_URL1 = URL1[:index1] + random_num + URL1[index1:]
     plt.savefig(final_URL1)
@@ -78,7 +78,7 @@ def kanjyo():
 
 
     # Cookieの使用により、URLにランダム番号を挿入し、保存
-    URL2 = "/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/image/graph.jpg"
+    URL2 = "../static/image/graph.jpg"
     index2 = URL2.find(".jpg")
     final_URL2 = URL2[:index2] + random_num + URL2[index2:]
     plt.savefig(final_URL2)

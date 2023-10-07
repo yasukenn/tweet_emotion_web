@@ -226,7 +226,7 @@ def tweet_get_to_csv(word, wordcount):
         cnt += 1
         tweet_data.append([tweet['id'], tweet['user']['screen_name'], tweet['created_at'], clean_tweet.replace('\n',''), tweet['favorite_count'], tweet['retweet_count']])
 
-    csv_file1 = "/Users/yasudakenshirou/Documents/sakulab_zemi/sakulabzemi_b3/hackason/work_file8/static/csv/tweet_text1.csv"
+    csv_file1 = "../static/csv/tweet_text1.csv"
     with open(csv_file1, 'w',newline='',encoding='utf-8') as f:
         writer = csv.writer(f, lineterminator='\n')
         writer.writerow(["id","user","created_at","text","fav","RT"])
